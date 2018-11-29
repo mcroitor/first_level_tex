@@ -77,7 +77,7 @@ int main(int argc, char** argv) {
 	std::ofstream fout;
 	try{
 		fin.open(infilename.c_str());
-    	fout.open(outfilename.c_str(), std::ios::app);    
+    	fout.open(outfilename.c_str(), std::ios::out);
 	}
 	catch(std::exception e){
 		info();
