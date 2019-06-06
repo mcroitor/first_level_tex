@@ -3,6 +3,7 @@
 \usepackage[english,russian]{babel}
 \usepackage{xskak,fancyhdr}
 \usepackage{geometry}
+\usepackage{multicol}
 
 % for smartphone
 \geometry{top=15mm}
@@ -90,5 +91,17 @@
 \input{1x2_2.02.tex}
 \smallbreak
 \input{1x2_2.03.tex}
+
+\newcounter{d_counter}
+\renewcommand{\labelenumi}{\bf{D.\arabic{enumi}}}
+\begin{multicols}{2}
+\input{../solutions/1.01.solutions.tex}
+\input{../solutions/1.02.solutions.tex}
+\input{../solutions/1.03.solutions.tex}
+\input{../solutions/1.04.solutions.tex}
+\input{../solutions/1.05.solutions.tex}
+\input{../solutions/1.06.solutions.tex}
+\end{multicols}
+\smallbreak
 
 \end{document}

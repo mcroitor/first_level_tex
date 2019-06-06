@@ -1,8 +1,10 @@
 \documentclass[a5paper]{book}
 \usepackage[utf8x]{inputenc}
 \usepackage[english,russian]{babel}
-\usepackage{xskak,fancyhdr}
+\usepackage{xskak,fancyhdr,chessfss}
+\usepackage{soulutf8}
 \usepackage{geometry}
+\usepackage{multicol}
 
 \geometry{top=15mm}
 \geometry{bottom=20mm}
@@ -89,5 +91,20 @@
 \input{2x3_2.02.tex}
 \smallbreak
 \input{2x3_2.03.tex}
+
+% solutions
+\pagebreak
+
+\newcounter{d_counter}
+\renewcommand{\labelenumi}{\bf{D.\arabic{enumi}}}
+\begin{multicols}{3}
+\input{../solutions/1.01.solutions.tex}
+\input{../solutions/1.02.solutions.tex}
+\input{../solutions/1.03.solutions.tex}
+\input{../solutions/1.04.solutions.tex}
+\input{../solutions/1.05.solutions.tex}
+\input{../solutions/1.06.solutions.tex}
+\end{multicols}
+\smallbreak
 
 \end{document}
