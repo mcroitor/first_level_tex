@@ -18,11 +18,12 @@ fen2tex --i=source/1.17.txt --o=tex_phone/1x2_1.17.tex --cols=1 --rows=2
 fen2tex --i=source/1.18.txt --o=tex_phone/1x2_1.18.tex --cols=1 --rows=2
 fen2tex --i=source/1.19.txt --o=tex_phone/1x2_1.19.tex --cols=1 --rows=2
 
-fen2tex --i=source/2.01.txt --o=tex_phone/1x2_2.01.tex --cols=1 --rows=2
-fen2tex --i=source/2.02.txt --o=tex_phone/1x2_2.02.tex --cols=1 --rows=2
-fen2tex --i=source/2.03.txt --o=tex_phone/1x2_2.03.tex --cols=1 --rows=2
+fen2tex --i=source/2.01.txt --o=tex_phone/1x2_2.01.tex --cols=1 --rows=2 --condition="+"
+fen2tex --i=source/2.02.txt --o=tex_phone/1x2_2.02.tex --cols=1 --rows=2 --condition="+"
+fen2tex --i=source/2.03.txt --o=tex_phone/1x2_2.03.tex --cols=1 --rows=2 --condition="+"
+fen2tex --i=source/2.04.txt --o=tex_phone/1x2_2.04.tex --cols=1 --rows=2 --condition="+"
 
 cd tex_phone
 pdflatex main.tex
 cd ..
-mv tex_phone/main.pdf first_level_phone.pdf
+move tex_phone\main.pdf first_level_phone.pdf

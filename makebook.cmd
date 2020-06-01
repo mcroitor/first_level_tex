@@ -18,11 +18,12 @@ fen2tex --i=source/1.17.txt --o=tex/2x3_1.17.tex --cols=2 --rows=3
 fen2tex --i=source/1.18.txt --o=tex/2x3_1.18.tex --cols=2 --rows=3
 fen2tex --i=source/1.19.txt --o=tex/2x3_1.19.tex --cols=2 --rows=3
 
-fen2tex --i=source/2.01.txt --o=tex/2x3_2.01.tex --cols=2 --rows=3
-fen2tex --i=source/2.02.txt --o=tex/2x3_2.02.tex --cols=2 --rows=3
-fen2tex --i=source/2.03.txt --o=tex/2x3_2.03.tex --cols=2 --rows=3
+fen2tex --i=source/2.01.txt --o=tex/2x3_2.01.tex --cols=2 --rows=3 --condition="+"
+fen2tex --i=source/2.02.txt --o=tex/2x3_2.02.tex --cols=2 --rows=3 --condition="+"
+fen2tex --i=source/2.03.txt --o=tex/2x3_2.03.tex --cols=2 --rows=3 --condition="+"
+fen2tex --i=source/2.04.txt --o=tex/2x3_2.04.tex --cols=2 --rows=3 --condition="+"
 
 cd tex
 pdflatex main.tex
 cd ..
-mv tex/main.pdf first_level.pdf
+move tex\main.pdf first_level.pdf
